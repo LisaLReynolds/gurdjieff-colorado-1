@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Stories | Gurdjieff Foundation Colorado">
+
+<section>
+  <div class="container">
+    <h1>Stories</h1>
+    <p>Stories written by our group members.</p>
+  </div>
+</section>
+
+</BaseLayout>
