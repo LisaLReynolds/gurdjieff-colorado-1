@@ -1,17 +1,37 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home | Gurdjieff Foundation Colorado">
+
+<Hero
+  heading="A Place for Study and Practice"
+  text="Dedicated to preserving and transmitting the teaching of G.I. Gurdjieff through study, music, movement, and inner work."
+/>
+
+<section>
+  <div class="container">
+    <h2>Our Work</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Teaching</h3>
+        <p>Study groups and meetings dedicated to understanding the teaching.</p>
+      </div>
+      <div class="card">
+        <h3>Practice</h3>
+        <p>Work on attention and conscious effort.</p>
+      </div>
+      <div class="card">
+        <h3>Music</h3>
+        <p>The sacred music of Gurdjieff and de Hartmann.</p>
+      </div>
+      <div class="card">
+        <h3>Events</h3>
+        <p>Public talks and special gatherings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</BaseLayout>
