@@ -1,37 +1,44 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import ImageSection from "../components/ImageSection.astro";
 ---
 
 <BaseLayout title="Home | Gurdjieff Foundation Colorado">
 
-<Hero
-  heading="A Place for Study and Practice"
-  text="Dedicated to preserving and transmitting the teaching of G.I. Gurdjieff through study, music, movement, and inner work."
-/>
+  <Hero
+    heading="A Place for Study and Practice"
+    text="Dedicated to preserving and transmitting the teaching through study, music, movement, and inner work."
+  />
 
-<section>
-  <div class="container">
-    <h2>Our Work</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Teaching</h3>
-        <p>Study groups and meetings dedicated to understanding the teaching.</p>
-      </div>
-      <div class="card">
-        <h3>Practice</h3>
-        <p>Work on attention and conscious effort.</p>
-      </div>
-      <div class="card">
-        <h3>Music</h3>
-        <p>The sacred music of Gurdjieff and de Hartmann.</p>
-      </div>
-      <div class="card">
-        <h3>Events</h3>
-        <p>Public talks and special gatherings.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <ImageSection
+    title="Teaching"
+    text="Study groups and meetings dedicated to understanding the teaching."
+    image="/images/teaching.jpg"
+    alt="People gathered in quiet study"
+  />
+
+  <ImageSection
+    title="Practice"
+    text="Work on attention and conscious effort in daily life."
+    image="/images/practice.jpg"
+    alt="Calm interior space for practice"
+    reverse={true}
+  />
+
+  <ImageSection
+    title="Music"
+    text="The sacred music of Gurdjieff and de Hartmann."
+    image="/images/music.jpg"
+    alt="Piano and sheet music"
+  />
+
+  <ImageSection
+    title="Events"
+    text="Public talks and special gatherings."
+    image="/images/events.jpg"
+    alt="Lecture setting"
+    reverse={true}
+  />
 
 </BaseLayout>
