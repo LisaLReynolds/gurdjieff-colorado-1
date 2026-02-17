@@ -1,10 +1,11 @@
 :root {
-  --color-primary: #1f3d2b;
-  --color-accent: #4a6b57;
-  --color-bg: #f5f2ea;
-  --color-text: #2a2a2a;
-  --color-highlight: #b08d57;
+  --color-primary: #5f7284;   /* calm grey-blue (replaces forest green) */
+  --color-accent: #8a9aa8;    /* soft complementary blue-grey */
+  --color-bg: #f6f2ea;        /* light warm background #f3efe7  #efe9de  #f6f2ea*/
+  --color-text: #1f2a33;      /* deep neutral for accessibility */
+  --color-highlight: #a08f6a; /* muted warm tone from rug */
   --color-white: #ffffff;
+
 
   --max-width: 1100px;
 }
