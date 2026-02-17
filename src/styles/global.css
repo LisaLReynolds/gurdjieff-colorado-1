@@ -119,3 +119,33 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.feature {
+  padding: 4rem 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .feature-reverse .feature-text {
+    order: 2;
+  }
+
+  .feature-reverse .feature-image {
+    order: 1;
+  }
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
