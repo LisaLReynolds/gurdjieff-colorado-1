@@ -1,0 +1,24 @@
+---
+const {
+  title,
+  text,
+  image,
+  alt,
+  reverse = false
+} = Astro.props;
+---
+
+<section class={`feature ${reverse ? 'feature-reverse' : ''}`}>
+  <div class="container feature-grid">
+    
+    <div class="feature-text">
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </div>
+
+    <div class="feature-image">
+      <img src={image} alt={alt} loading="lazy" />
+    </div>
+
+  </div>
+</section>
