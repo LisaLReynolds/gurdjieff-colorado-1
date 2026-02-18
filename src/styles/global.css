@@ -107,9 +107,7 @@ nav a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-background: rgba(243, 239, 231, 0.78);
-
- /* warm translucent filter */
+  background: rgba(243, 239, 231, 0.82); /* warm translucent filter original 0.78*/
   z-index: 1;
 }
 
