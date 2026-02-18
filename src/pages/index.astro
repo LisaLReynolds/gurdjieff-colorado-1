@@ -6,17 +6,18 @@ import ImageSection from "../components/ImageSection.astro";
 
 <BaseLayout title="Home | Gurdjieff Foundation Colorado">
 
-  <Hero
-    heading="A Place for Study and Practice"
-    text="Dedicated to preserving and transmitting the teaching through study, music, movement, and inner work."
-  />
+<Hero
+  heading="A Place for Study and Practice"
+  text="Dedicated to preserving and transmitting the teaching through study, music, movement, and inner work."
+  image="/images/rugSection.jpg"
+/>
 
   <ImageSection
     title="Teaching"
     text="Study groups and meetings dedicated to understanding the teaching."
     image="/images/rr_flatiron.jpg"
     alt="People gathered in quiet study"
-    bg="soft"
+    bg="warm"
   />
 
   <ImageSection
@@ -33,7 +34,7 @@ import ImageSection from "../components/ImageSection.astro";
     text="The sacred music of Gurdjieff and de Hartmann."
     image="/images/GandD.jpg"
     alt="Piano and sheet music"
-    bg="tint"
+    bg="warm"
   />
 
   <ImageSection
@@ -42,7 +43,7 @@ import ImageSection from "../components/ImageSection.astro";
     image="/images/welcome.png"
     alt="Lecture setting"
     reverse={true}
-    bg="warm"
+    bg="default"
   />
 
 </BaseLayout>
