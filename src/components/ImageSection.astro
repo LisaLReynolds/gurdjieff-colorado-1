@@ -4,11 +4,12 @@ const {
   text,
   image,
   alt,
-  reverse = false
+  reverse = false,
+  bg = "default" // new prop
 } = Astro.props;
 ---
 
-<section class={`feature ${reverse ? 'feature-reverse' : ''}`}>
+<section class={`feature feature-${bg} ${reverse ? 'feature-reverse' : ''}`}>
   <div class="container feature-grid">
     
     <div class="feature-text">

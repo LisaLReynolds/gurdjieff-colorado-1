@@ -124,6 +124,26 @@ footer {
   padding: 4rem 1rem;
 }
 
+/* default = white */
+.feature-default {
+  background: var(--color-accent);
+}
+
+/* warm calm background */
+.feature-soft {
+  background: var(--color-bg);
+}
+
+/* tinted grey-blue section */
+.feature-tint {
+  background: var(--color-primary);
+}
+
+/* subtle highlight section */
+.feature-warm {
+  background: color-mix(in srgb, var(--color-highlight) 18%, white);
+}
+
 .feature-grid {
   display: grid;
   gap: 2rem;
